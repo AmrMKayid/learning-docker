@@ -1,3 +1,5 @@
 FROM alpine
 
-CMD ["echo", "Hello, World!"]
+COPY script.sh /script.sh
+
+CMD ["/script.sh"]
